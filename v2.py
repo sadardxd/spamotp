@@ -245,9 +245,9 @@ if __name__=="__main__":
      try:
           clear()
           baner()
-          hh="+62"
+          hh="+92"
           no=input("[+]Phone Number: ")
-          c=no[1:12]
+          c=no[0:12]
           w=hh+c 
           kata("Waiting....!!")
           jenius()
