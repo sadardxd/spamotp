@@ -102,7 +102,7 @@ while True:
 		asu=a[0:2]
 		if a in(""," "):print("[!] Jangan Kosong!")
 		elif "34" not in asu:print("[!] Gunakan Nomer Dengan Awalan 34xxx")
-		elif len(a)<=10:print("[!] Nomer Harus Lebih Dari 10 Angka!")
+		elif len(a)<=9:print("[!] Nomer Harus Lebih Dari 9 Angka!")
 		else:
 			b=a[1:12] 
 			c="92"+b
